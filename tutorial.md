@@ -52,5 +52,5 @@ To be completed, can be reafactored from some classic dynamic programming algori
 such as longest common subsequence
 
 ## Examples
-[Feeback](https://docs.taichi-lang.org/blog/accelerate-python-code-100x)
-[Feedback](https://docs.taichi-lang.org/zh-Hans/blog/how-i-created-the-tranquil-autumn-air-within-99-lines-of-python-code)
++ [Feeback](https://docs.taichi-lang.org/blog/accelerate-python-code-100x)
++ [Feedback](https://docs.taichi-lang.org/zh-Hans/blog/how-i-created-the-tranquil-autumn-air-within-99-lines-of-python-code)

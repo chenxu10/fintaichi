@@ -1,7 +1,3 @@
-# 用太极编程语言攻克21点的赌场冒险与保险规划
+# Application of Taichi Language in Finance Applications
 
-## 计划理解动态规划
-## 用Python写出来
-## 用太极写出来
-## 比较太极与Python的异同
-## 加太极好友
+This repo focus application of taichi-language in finance acceleration applications.

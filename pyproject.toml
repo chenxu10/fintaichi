@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "physicssim"
+name = "taichi-lang-finapp"
 version = "0.1.0"
 description = ""
 authors = ["chenxu10 <shenxu2011@gmail.com>"]

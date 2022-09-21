@@ -9,10 +9,7 @@ as possible, given that they know the exact order
 of the deck.
 """
 
-
 import random
-
-
 class Card:
   """
   Card class for Black Jack
@@ -140,7 +137,7 @@ def perfect_blackjack(deck):
   best_scores = {52: -float('inf')}
   best_hits = {}
   for i in range(51, -1, -1):
-    scores = {}
+    scores = {} #start with card whats the score
     for hits in range(0, 52 - i):
       cards_played, game_score = round_outcome(deck, i, hits)
       if best_scores[i + cards_played] != -float('inf'):

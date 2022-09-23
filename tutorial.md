@@ -1,5 +1,4 @@
 # How I used Taichi Language to Conquer Blackjack
-
 When I was reading the legandary Ed Thop's autobiography A Man for All Markets, I was deeply impressed by how he conquered the blackjack, a casino game popular in las vegas with dynamic programming and card counting system.
 
 Since I happened to know Taichi Lang has great features in optimizing the dynamic programming problems significantly, I decided to use it to create a winning table for gamblers aiming to get an edge in blackjack game.
@@ -16,10 +15,7 @@ Of course, beating the house is a complicated adventure requires cheat detecting
 We also assume when you win one round, you get 1$, when you lose one round, you get -1$, and 0$ for a tie.
 
 ## How to approach this problem?
-When we are given a list of cards with known order, we should develop an algorithm to return 
-a score dictionary and a pointer dictionary. The score dictionary shows when the deck starts 
-at specific card, how many dollars you will win. The pointer dictionary shows when the deck starts
-at specific card, how many hits you should take.
+When we are given a list of cards with known order, we should develop an algorithm to return a score dictionary and a pointer dictionary. The score dictionary shows when the deck starts at specific card, how many dollars you will win. The pointer dictionary shows when the deck starts at specific card, how many hits you should take.
 
 ## The Algorithm
 We first finding out the subproblems of this problem. It will be given we have played out some cards, 
@@ -48,8 +44,7 @@ def perfect_blackjack(deck):
   return best_scores, best_hits
 ```
 ## Taichi Acceleration
-To be completed, can be reafactored from some classic dynamic programming algorithms
-such as longest common subsequence
+To be completed, can be reafactored from some classic dynamic programming algorithms such as longest common subsequence.
 
 ## Examples
 + [Feeback](https://docs.taichi-lang.org/blog/accelerate-python-code-100x)

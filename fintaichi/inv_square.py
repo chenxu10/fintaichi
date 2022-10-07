@@ -6,6 +6,8 @@ def inv_square_acc(x):
     return 1.0 / (x * x)
 
 @ti.kernel
-def my_kernel(x: ti.types.ndarray(), y: ti.types.ndarray()):
-    for i in range(x.shape[0]):
-        x[i] += y[i]
+def partial_sum(x:int):
+    print(x)
+
+if __name__ == '__main__':
+    partial_sum(1)

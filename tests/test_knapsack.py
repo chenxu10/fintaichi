@@ -1,5 +1,4 @@
-
-
+import numpy as np
 
 def knapsack(val, cost, weights):
     n = len(val)
@@ -17,9 +16,14 @@ def knapsack(val, cost, weights):
     return dp[-1][-1]
 
 def test_knapsack():
-    val = [1,3,1]
-    cost = [2,4,2]
-    weights = 5
+    N = 3
+    val = np.random.randint(0, 100, N, dtype=np.int32)
+    print(val)
+    cost = np.random.randint(0, 100, N, dtype=np.int32)
+    print(cost)
+    weights = 49
     print(knapsack(val, cost, weights))
-    assert knapsack(val, cost, weights) == 3
+    # assert knapsack(val, cost, weights) == 3
 
+if __name__ == '__main__':
+    test_knapsack()

@@ -6,14 +6,16 @@ def knapsack(val, cost, weights):
 
     for i in range(n + 1):
         for w in range(weights + 1):
-            if cost[i - 1] <= w:
+            if i == 0 or w == 0:
+                dp[i][w] = 0 
+            elif cost[i - 1] <= w:
                 choosethisknap = val[i - 1] + dp[i-1][w - cost[i - 1]]
                 notchoosethisknap = dp[i - 1][w]
                 dp[i][w] = max(choosethisknap, notchoosethisknap)
             else:
                 dp[i][w] = dp[i - 1][w]
     
-    return dp[-1][-1]
+    return dp[n][weights]
 
 def test_knapsack():
     N = 3

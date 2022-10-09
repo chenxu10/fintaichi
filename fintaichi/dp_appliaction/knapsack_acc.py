@@ -18,7 +18,7 @@ def knapsack_budget(
     return dp[n, w]
 
 if __name__ == "__main__":
-    val = np.array([1,3,1], dtype=np.int32)
+    val = np.array([1,3,4], dtype=np.int32)
     cost = np.array([2,4,2], dtype=np.int32)
     Weights = 5
     n = val.shape[0]
